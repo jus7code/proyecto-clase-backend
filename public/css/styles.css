@@ -240,3 +240,73 @@ body {
 .btn-small:hover {
     background: #1e3c72;
 }
+/* DETALLE PRODUCTO */
+
+.detail-container {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    overflow: hidden;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.detail-image img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.detail-info {
+    flex: 1;
+}
+
+.detail-info h2 {
+    color: #2a5298;
+    margin-bottom: 15px;
+}
+
+.detail-price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1e3c72;
+}
+
+.detail-description {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.detail-actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* BOTÓN OUTLINE */
+.btn-outline {
+    padding: 12px 20px;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    background: transparent;
+    color: #2a5298;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: #2a5298;
+    color: #fff;
+}
