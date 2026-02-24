@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', length: 100);
             $table->text('description')->nullable();
-            $table->decimal('price', total: 8, places: 2);
+            $table->decimal('price');
             $table->timestamps();
 
             //crear una llave foranea
