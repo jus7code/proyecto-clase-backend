@@ -19,7 +19,7 @@
                     <div class="products-grid">
                         @foreach ($milista as $product)
                             <div class="product-card">
-                                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+                                <img src="{{asset('storage/'.$product->image)}}" alt="">
                                 <div class="product-info">
                                     <h3 class = "product_name"> {{$product->name}} </h3>
                                     <p class="price">{{$product->price}}</p>
