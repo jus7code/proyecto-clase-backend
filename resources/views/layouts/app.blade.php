@@ -11,9 +11,9 @@
     <header class="main-header">
         <div class="logo">MiTienda</div>
         <nav>
-            <a href="#">Inicio</a>
+            <a href="/product">Inicio</a>
             <a href="#">Productos</a>
-            <a href="#">Crear Producto</a>
+            <a href="/product/create">Crear Producto</a>
             <a href="#">Contacto</a>
         </nav>
     </header>

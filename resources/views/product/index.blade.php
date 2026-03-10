@@ -27,7 +27,7 @@
                                         {{$product->description}}
                                     </p>
                                     <span class="status activo">Activo</span>
-                                    <button class="btn-small">Ver Detalles</button>
+                                    <button class="btn-small" href="">Ver Detalles</button>
                                 </div>
                             </div>
 
