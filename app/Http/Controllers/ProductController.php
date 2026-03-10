@@ -11,7 +11,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $prodcutlist = product::all();
+        $prodcutlist = product::paginate(9);
 
         return view('product.index', ['milista' => $prodcutlist]);
     }
@@ -56,5 +56,10 @@ class ProductController extends Controller
     public function show($id)
     {
         return view('product.show');
+
+    }
+    public function destroy(product $product){
+        $product->delete();
+        return redirect()->route('product.index');
     }
 }

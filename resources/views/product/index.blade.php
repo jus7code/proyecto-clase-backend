@@ -5,7 +5,7 @@
     <main class="container-products">
 
         <h2 class="section-title">Nuestros Productos</h2>
-
+{{ $milista->links('pagination::simple-default')}}
         <div class="products-grid">
 
             <!-- PRODUCTO 1 -->
@@ -28,6 +28,12 @@
                                     </p>
                                     <span class="status activo">Activo</span>
                                     <button class="btn-small" href="">Ver Detalles</button>
+                                    <form action="{{route('product.destroy',$product)}}" method="post">
+                                        @csrf
+                                        @method('delete')
+                                        <button class="btn-small" href="" >Eliminar</button>
+                                    </form>
+                                    
                                 </div>
                             </div>
 

@@ -11,5 +11,7 @@ Route::get('/','index')->name('product.index');
 Route::get('/create','create');
 Route::get('/{id}','show');
 route::post('/store','store')->name('product.store');
+Route::delete('/{product}','destroy')->name('product.destroy'); 
+
 });
 
