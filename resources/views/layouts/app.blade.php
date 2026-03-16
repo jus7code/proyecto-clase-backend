@@ -9,19 +9,21 @@
 
     <!-- HEADER -->
     <header class="main-header">
-        <div class="logo">MiTienda</div>
-        <nav>
-            <header class="main-header">
     <div class="logo">MiTienda</div>
     <nav>
         <a href="/">Inicio</a>
         <a href="{{ route('product.index') }}">Productos</a>
-        <a href="/product/create">Crear Producto</a>
-        <a href="">Carrito de compras</a>
+        <a href="{{ route('product.create') }}">Crear Producto</a>
+        <a href="{{ route('cart.index') }}" class="cart-nav-link">
+            🛒 Carrito
+            @php $cartCount = array_sum(array_column(session()->get('cart', []), 'quantity')); @endphp
+            @if($cartCount > 0)
+                <span class="cart-badge">{{ $cartCount }}</span>
+            @endif
+        </a>
         <a href="{{ route('admin.index') }}">Configuración</a>
     </nav>
-        </nav>
-    </header>
+</header>
 
 @yield('content')
 
