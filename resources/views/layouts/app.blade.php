@@ -11,10 +11,15 @@
     <header class="main-header">
         <div class="logo">MiTienda</div>
         <nav>
-            <a href="/">Inicio</a>
-            <a href="/product">Productos</a>
-            <a href="/product/create">Crear Producto</a>
-            <a href="">Carrito de compras</a>
+            <header class="main-header">
+    <div class="logo">MiTienda</div>
+    <nav>
+        <a href="/">Inicio</a>
+        <a href="{{ route('product.index') }}">Productos</a>
+        <a href="/product/create">Crear Producto</a>
+        <a href="">Carrito de compras</a>
+        <a href="{{ route('admin.index') }}">Configuración</a>
+    </nav>
         </nav>
     </header>
 
