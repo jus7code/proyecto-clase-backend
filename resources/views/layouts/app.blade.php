@@ -11,10 +11,10 @@
     <header class="main-header">
         <div class="logo">MiTienda</div>
         <nav>
-            <a href="/product">Inicio</a>
-            <a href="#">Productos</a>
+            <a href="/">Inicio</a>
+            <a href="/product">Productos</a>
             <a href="/product/create">Crear Producto</a>
-            <a href="#">Contacto</a>
+            <a href="">Carrito de compras</a>
         </nav>
     </header>
 
